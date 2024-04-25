@@ -1,0 +1,57 @@
+! Title: Fix Youtube's UI on Desktop
+! Version: 0.2
+! Expires: 1 day
+! Description: Youtube keeps changing their UI and making it worse, this fixes that
+! Homepage: https://github.com/sepehrkiller/FixYoutubeUI
+! Homepage for the repository: https://github.com/sepehrkiller/FixYoutubeUI
+! Important notes:
+! - this list is a work in progress, if you can help check out the github page https://github.com/sepehrkiller/FixYoutubeUI
+! - Please use this list only with uBlock Origin
+
+! ======={ Fix YouTube UI }=======
+! Bring back old Youtube UI Layout
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_grid, false)
+
+! Fix Video being Too Big on the old UI (right side of the video & FullScreen button is cut-off without these filters)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_page_columns_top_padding, 24)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_page_horizontal_margin, 24)
+
+! Fix Comment Section bugs (profile pictures being small, comments being weird, ...)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.small_avatars_for_comments, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.small_avatars_for_comments_ep, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_watch_compact_comments, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_watch_compact_comments_header, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.optimal_reading_width_comments_ep, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_comments_panel_button, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_comments_ep_disable_theater, true)
+
+! fix Live Chat on old UI (haven't tested these)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.live_chat_over_engagement_panels, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.live_chat_scaled_height, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.live_chat_smaller_min_height, false)
+
+! add Volume control to Youtube Shorts (Experimental Youtube feature that's disabled by default)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.desktop_shorts_volume_controls, true)
+
+! Disable data collection and checking for ads (i think)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_player_check_ad_state_on_stop, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.html5_force_debug_data_for_client_tmp_logs, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_watch_log_theater_mode, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.enable_is_extended_monitoring, false)
+
+! others (don't know what these ones do but they are Experimental Flags
+! and based on my research they shouldn't be enabled (or disabled)
+! if you know what they do let me know) (feel free to delete these or experiment with them)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_grid_hide_chips, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.kevlar_watch_grid_reduced_top_margin_rich_grid, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.swatcheroo_direct_use_rich_grid, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.main_app_sink_wrapper_batch_1, true)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.reels_web_disable_persistent_guide_shorts, true)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_enable_deeper_metadata_highlight_styling, true)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_player_enable_featured_product_banner_exclusives_on_desktop, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.main_app_controller_extraction_batch_18, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.main_app_controller_extraction_batch_19, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.no_iframe_for_web_stickiness, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.remove_masthead_channel_banner_on_refresh, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_watch_theater_chat, false)
+youtube.com##+js(set, yt.config_.EXPERIMENT_FLAGS.web_watch_theater_fixed_chat, false)
