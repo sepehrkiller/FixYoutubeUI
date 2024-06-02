@@ -1,6 +1,6 @@
 ! Title: Fix Youtube's UI on Desktop
-! Version: 0.2
-! Expires: 1 day
+! Version: 0.3
+! Expires: 10 days
 ! Description: Youtube keeps changing their UI and making it worse, this fixes that
 ! Homepage: https://github.com/sepehrkiller/FixYoutubeUI
 ! Homepage for the repository: https://github.com/sepehrkiller/FixYoutubeUI
