@@ -90,3 +90,6 @@ youtube.com###related #contents ytd-rich-section-renderer ytd-rich-item-renderer
 youtube.com###related .ytd-rich-shelf-renderer ytd-rich-item-renderer.ytd-rich-shelf-renderer[hidden=""]:style(display:block!important;)
 
 youtube.com###related #dismissible.ytd-rich-shelf-renderer:style(margin:0!important; border-color: transparent!important)
+
+!Fixes title size being too big (wrote by theanyoneuser, fully original)
+youtube.com## yt-formatted-string.style-scope.ytd-watch-metadata:style(font-size: 20px!important; line-height: 28px!important)
