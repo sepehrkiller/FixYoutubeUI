@@ -1,17 +1,17 @@
 # Fix Youtube's UI
 
-uBlock Origin list which allows you to Disable Youtube's Experimental UI changes on Desktop.\
-or in Simpler terms Revert back to the Good UI and stop Youtube Experimenting on you, Take back your Freedom
+uBlock Origin list that Disables Youtube's Experimental UI on Desktop.\
+stop Youtube Experimenting on you, you are not their Lab Rat, Take back your Freedom
 
 ### Installation
 
 #### uBlock Origin filters
 
-Use a browser which supports extensions/add-ons (I Recommend Firefox or forks of Firefox) and install uBlock Origin (Best adBlocker but it's not just an adBlocker)\
+Use a browser that supports extensions/add-ons (I Recommend Firefox or forks of Firefox) and install uBlock Origin (Best adBlocker but it's not just an adBlocker)\
 Now go to uBlock Origins Settings > Filter Lists > scroll down > Import > copy and paste the link below\
 [Fix Youtube UI](https://raw.githubusercontent.com/sepehrkiller/FixYoutubeUI/main/FixYoutubeUI.txt)
 
-alternatively you can copy all of the filters and add them to My filters section of uBO but then you would have to manually update the filters yourself
+alternatively you can copy all of the filters and add them to **My filters** section of uBO but if you do that then you have to manually update the filters yourself
 
 
 #### userscripts
