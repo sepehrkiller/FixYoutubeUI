@@ -77,3 +77,7 @@ youtube.com###related #dismissible.ytd-rich-shelf-renderer:style(margin:0!import
 
 ! Fixes title size being too big (wrote by theanyoneuser, fully original)
 youtube.com## yt-formatted-string.style-scope.ytd-watch-metadata:style(font-size: 20px!important; line-height: 28px!important)
+
+! Minor fixes for the suggested videos layout (written by mystictide)
+youtube.com###related #avatar-container:style(display: none!important;)
+youtube.com###related ytd-rich-item-renderer:style(width: 100%!important;)
